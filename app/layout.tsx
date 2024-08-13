@@ -8,7 +8,7 @@ import myimage from "@/public/favicon.ico"
 import React, { useState } from 'react';
 
 
-const Layout: React.FC = ({ children }) => {
+const Layout = ({ children }: Readonly<{children: React.ReactNode;}>) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {

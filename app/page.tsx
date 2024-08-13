@@ -4,9 +4,6 @@ import Image from "next/image";
 import myimage from "@/public/favicon.ico";
 import { useState, useEffect } from "react";
 
-interface HomeProps {
-  title?: string;
-}
 
 interface Product {
   item_img: string;
@@ -14,7 +11,7 @@ interface Product {
   item_disc: string;
 }
 
-const Home: React.FC<HomeProps> = ({ title }) => {
+const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
@@ -35,7 +32,7 @@ const Home: React.FC<HomeProps> = ({ title }) => {
       </div>
 
       <div className="px-9 font-semibold text-2xl text-center">
-        <h1>{title || "Featured Products"}</h1>
+        <h1>Featured Products</h1>
       </div>
       
       <div className="justify-center flex">

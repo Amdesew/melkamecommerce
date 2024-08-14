@@ -15,7 +15,7 @@ const CarSpare: React.FC = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      const res = await fetch("http://127.0.0.1:8000/api/carspare/");
+      const res = await fetch("https://melkamecommerce.pythonanywhere.com/api/carspare/");
       const data = await res.json();
       setProducts(data);
     }

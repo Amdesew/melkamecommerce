@@ -3,7 +3,7 @@
 import React, {useState} from "react";
 import axios from 'axios';
 
-const API_URL = "http://127.0.0.1:8000/api/orders/"
+const API_URL = "https://melkamecommerce.pythonanywhere.com/api/orders/"
 
 const form:React.FC =() => {
 

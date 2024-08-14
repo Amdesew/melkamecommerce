@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      const res = await fetch("http://127.0.0.1:8000/api/samples/");
+      const res = await fetch("https://melkamecommerce.pythonanywhere.com/api/samples/");
       const data = await res.json();
       setProducts(data);
     }

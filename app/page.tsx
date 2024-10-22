@@ -36,7 +36,7 @@ const Home: React.FC = () => {
       </div>
       
       <div className="justify-center flex">
-        <div className="py-3 item-center">
+        <div className="grid py-3 item-center md:grid-cols-4">
           {products.map((product, index) => (
             <div key={index} className="max-w-sm px-5 py-3 rounded border-black shadow w-60">
               <Image src={product.item_img} alt={product.item_title} width={300} height={200} />
